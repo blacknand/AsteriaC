@@ -1,3 +1,2 @@
 # AsteriaC
-A full compiler toolchain. AsteriaC includes a lexer, parsert, AST, IR, optimisation passes, register allocation, AArch64 code generation, and a minimal JIT engine.
-
+AsteriaC is a self-contained compiler for a C-like systems language designed and implemented from scratch. It includes a hand-written lexer and recursive-descent parser, an AST with semantic analysis and type checking, a typed basic-block IR, dataflow-based optimisation passes, a linear scan register allocator, and an AArch64 backend that adheres to the AAPCS64 calling convention. AsteriaC compiles source programs to AArch64 assembly, which is assembled and linked using the system toolchain to produce native executables. A *later* strench goal is a minimal JIT mode that directly emits AArch64 machine code and executes compiled functions in memory.
